@@ -1,0 +1,3 @@
+##   The setPassword Function is lacking access controll
+
+The PasswordStore contract has a significant security vulnerability related to access control. Specifically, the setPassword function does not check whether the caller is the owner of the contract, allowing anyone to set a new password for the contract. This means that malicious actors or unauthorized users can change the password, potentially compromising the security of the stored information.
